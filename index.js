@@ -1,3 +1,19 @@
+let libro={  
+titulo:"",
+autor:"",
+genero:"",
+idioma:"",
+precio:"",
+formato:"",
+isbn:"",
+descripocion:"",
+estado:"",
+ubicacion:"",
+fecha_publicacion:"",
+editorial:"",
+dimencion:"",
+peso:"",}
+
 let libros =[
     {
     titulo:"",
@@ -343,3 +359,17 @@ peso:"",
     
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 ]
+function CrearLibro(libro) {
+    libros.push(libro);
+    
+}
+function EliminarLibro() {
+
+    if (Libros.length > 0) {
+        return Libros.pop();
+      } else {
+        console.log("La pila está vacía.");
+      }
+}
+function mostrarLibros() {}
+    
