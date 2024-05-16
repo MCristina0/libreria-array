@@ -371,5 +371,16 @@ function EliminarLibro() {
         console.log("La pila está vacía.");
       }
 }
-function mostrarLibros() {}
+function mostrarLibros() {
+    if (Libros.length > 0) {
+        console.log("Pila actual de libros:");
+        pilaLibros.forEach((libro, index) => {
+          console.log(`${index + 1}: ${libro.titulo} por ${libro.autor}`);
+        });
+      } else {
+        console.log("La pila está vacía.");
+      }
+    
+}
+
     
