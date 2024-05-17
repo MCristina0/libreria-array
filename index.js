@@ -3,17 +3,17 @@ titulo:"Cien años de soledad",
 autor:"Gabriel García Márquez",
 genero:"Realismo mágico",
 idioma:" Español",
-precio:"",
-formato:"",
+precio:"+40.5 euros",
+formato:"pasta dura",
 isbn:"Varía según la edición1",
-descripocion:"",
-estado:"",
-ubicacion:"",
+descripocion:" trata un siglo en la vida de la familia Buendía, cuyo patriarca, José Arcadio Buendía, fundó el pueblo ficticio de Macondo, en Colombia.",
+estado:"nuevo",
+ubicacion:"colombia macondo",
 fecha_publicacion:"",
-editorial:"",
+editorial:"editoriar sub americana",
 dimencion:"",
-peso:"",
-paginas:"",}
+peso:"400g",
+paginas:"432",}
 
 let libros =[
 {
