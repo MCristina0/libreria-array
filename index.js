@@ -1,4 +1,4 @@
-let libro={  
+let libro ={  
 titulo:"Cien años de soledad",
 autor:"Gabriel García Márquez",
 genero:"Realismo mágico",
@@ -11,7 +11,7 @@ estado:"nuevo",
 ubicacion:"colombia macondo",
 fecha_publicacion:"",
 editorial:"editoriar sub americana",
-dimencion:"",
+dimencion:"2",
 peso:"400g",
 paginas:"432",}
 
@@ -119,51 +119,72 @@ let libros =[
     dimensiones:"13.21 x 2.03 x 20.32 cm",
     peso:249+"g", 
     editorial:" Vintage Español",
-},
-{
-    titulo:"Cien años de soledad",
-    paginas:471,
-    autor:"Gabriel García Márquez",
-    genero:"Realismo mágico",
-    idioma:"Español",
-    precio:"Varía según el vendedor",
-    formato:"Tapa blanda y digital",
-    isbn:9780307474728,
-    descripcion:" La obra maestra de Gabriel García Márquez narra la historia de la familia Buendía a lo largo de siete generaciones en el pueblo ficticio de Macondo",
-    estado:"Nuevo o usado",
-    ubicacion:"Disponible en varias librerías y plataformas online",
-    fecha_publicacion:"Primera edición en 1967",
-    dimensiones:"13.97 x 2.54 x 20.96 cm",
-    peso:" 340 g", 
-    editorial:"HarperCollins", 
-},
-    
-    
+}
+
+
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
 ]
-mostrarLibros()
-function CrearLibro(libro) {
+
+function CrearLibro() {
+
     libros.push(libro);
-    
+         
 }
-function EliminarLibro() {
+function EliminarLibros() {
 
     if (libros.length > 0) {
-        return libros.pop();
-      } else {
+      let  eliminar =libros.pop();
+        return eliminar
+     
+    } else {
         console.log("La pila está vacía.");
       }
+     
+   
+
 }
 function mostrarLibros() {
     if (libros.length > 0) {
         console.log(" libros disponibles:");
         libros.forEach((libro, index) => {
-          console.log(`${index + 1}: el titulo es: ${libro.titulo } autor: ${libro.autor} genero: ${libro.genero} idioma: ${libro.idioma} precio: ${libro.precio} formato: ${libro.formato} isdn: ${libro.isdn} descripcion: ${libro.descripcion} estado:${libro.estado} ubicacion: ${libro.ubicacion} fecha publicacion: ${libro.fecha_publicacion} dimensiones: ${libro.dimensiones} peso:${libro.peso} edicorial: ${libro.editorial } nunero de paginas ${libro.paginas}`);
+          console.log(`${index + 1}: el titulo es: ${libro.titulo} autor: ${libro.autor} genero: ${libro.genero} idioma: ${libro.idioma} precio: ${libro.precio} formato: ${libro.formato} isdn: ${libro.isdn} descripcion: ${libro.descripcion} estado:${libro.estado} ubicacion: ${libro.ubicacion} fecha publicacion: ${libro.fecha_publicacion} dimensiones: ${libro.dimensiones} peso:${libro.peso} edicorial: ${libro.editorial } nunero de paginas ${libro.paginas}`);
         });
       } else {
         console.log("La pila está vacía.");
       }
+  
     
-}
+};
 
+function menu() {
     
+ let  eleccion=prompt(" 1. Agregar un libro 2. Quitar un libro 3. Mostrar la pila 4. Salir")
+ console.log (eleccion)
+
+
+        switch(eleccion) {
+            case '1': CrearLibro()
+            console.log(`se creo el libro: ${libro.titulo}`);
+            menu() 
+                   break;
+            case '2':
+                EliminarLibros();
+                console.log(`Libro removido:`);
+                menu() 
+                break;
+            case '3':
+                mostrarLibros();
+                menu() 
+             
+                break;
+            case '4':
+                console.log("ternimo la consulta")
+                break;
+                menu() 
+            default:
+                console.log('Opción inválida, por favor elige de nuevo.');
+                menu();
+        };
+    }
+
+    menu()
