@@ -13,7 +13,7 @@ fecha_publicacion:"",
 editorial:"editoriar sub americana",
 dimencion:"2",
 peso:"400g",
-paginas:"432",}
+paginas:"432"}
 
 let libros =[
 {
@@ -153,7 +153,7 @@ let libros =[
     estado:"antiguo", 
     ubicacion:"biblioteca de colombia", 
     fecha_publicacion:"1985", 
-    editorial:"boka for you young,
+    editorial:"boka for you young",
     paginas:"368", 
     dimension:"11.43*3.18*18.42cm", 
     peso:"500g", 
@@ -419,6 +419,120 @@ function menu() {
 
     menu()
 
-//metodo map
+//metodo map 
+const listar1= libros.map((libro) =>{
+    return{
+        titulo:libro.titulo,
+        autor:libro.autor,
+        editorial:libro.editorial,
+        precio:libro.precio,
+    };
+});
+const listar2= libros.map((libro) =>{
+    return{
+        titulo:libro.titulo,
+        descripcion:libro.descripcion,
+        genero:libro.genero,
+    };
+});
 
-    console.table ()
+const listar3= libros.map((libro) =>{
+    return{
+        titulo:libro.titulo,
+      editorial:libro.editorial,
+      dimencion:libro.dimension,
+    };
+    }
+);
+const listar4= libros.map((libro) =>{
+    return{
+         titulo:libro.titulo,
+         ubicacion:libro.ubicacion,
+         formato:libro.formato,
+         fecha_de_publicacion:libro.fecha_publicacion,
+    };
+});
+const listar5= libros.map((libro) =>{
+    return{
+            titulo:libro.titulo,
+            isbn:libro.isbn,
+            estado:libro.estado
+
+        
+    };
+});
+const listar6= libros.map((libro) =>{
+    return{
+        titulo:libro.titulo,
+        idioma:libro.idioma,
+        peso:libro.peso,
+        paginas:libros.paginas,
+        
+    };
+});
+const listar7= libros.map((libro) =>{
+    return{
+        titulo:libro.titulo,
+        idioma:libro.idioma,
+        ubicacion:libro.ubicacion,
+        precio:libro.precio,
+     
+    };
+});
+const listar8= libros.map((libro) =>{
+    return{
+        genero:libro.genero,
+        paginas:libro.paginas,
+        dimenciones:libro.dimension,
+     
+    };
+});
+const listar9= libros.map((libro) =>{
+    return{
+        titulo:libro.titulo,
+        descripcion:libro.descripcion,
+        precio:libro.precio,
+        estado:libro.estado,
+      
+    };
+});
+const listar10= libros.map((libro) =>{
+    return{
+        titulo:libro.titulo,
+        fecha:libro.fecha_publicacion,
+        estado:libro.estado,
+      
+    };
+});
+    console.table (listar1)
+    console.table (listar2)
+    console.table (listar3)
+    console.table (listar4)
+    console.table (listar5)
+    console.table (listar6)
+    console.table (listar7)
+    console.table (listar8)
+    console.table (listar9)
+    console.table (listar10)
+    //spreed
+    const librodescuento = libros.map((libro ) =>{  
+        return{
+            ...libro,
+            descuento:20,
+
+    };
+}
+  );
+  console.log(librodescuento)
+
+  const listardescuento= libros.map((libro) =>{
+    return{
+        titulo:libro.titulo,
+        autor:libro.autor,
+        editorial:libro.editorial,
+        precio:libro.precio,
+        descuento:libro.decuento,
+
+    };
+});
+  console.log(listardescuento)
