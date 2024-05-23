@@ -377,7 +377,7 @@ function mostrarLibros() {
     if (libros.length > 0) {
         console.log(" libros disponibles:");
         libros.forEach((libro, index) => {
-          console.log(`${index + 1}: el titulo es: ${libro.titulo} autor: ${libro.autor} genero: ${libro.genero} idioma: ${libro.idioma} precio: ${libro.precio} formato: ${libro.formato} isdn: ${libro.isdn} descripcion: ${libro.descripcion} estado:${libro.estado} ubicacion: ${libro.ubicacion} fecha publicacion: ${libro.fecha_publicacion} dimensiones: ${libro.dimension} peso:${libro.peso} edicorial: ${libro.editorial } nunero de paginas ${libro.paginas}`);
+          console.log(`${index + 1}: el titulo es: ${libro.titulo} autor: ${libro.autor} editorial: ${libro.editorial} precio: ${libro.precio} `);
         });
       } else {
         console.log("La pila está vacía.");
@@ -515,7 +515,7 @@ const listar10= libros.map((libro) =>{
     console.table (listar9)
     console.table (listar10)
     //spreed
-    const librodescuento = libros.map((libro ) =>{  
+    const librodescuento = libros.map((libro) =>{  
         return{
             ...libro,
             descuento:20,
@@ -525,14 +525,13 @@ const listar10= libros.map((libro) =>{
   );
   console.log(librodescuento)
 
-  const listardescuento= libros.map((libro) =>{
-    return{
-        titulo:libro.titulo,
-        autor:libro.autor,
-        editorial:libro.editorial,
-        precio:libro.precio,
-        descuento:libro.decuento,
 
-    };
+function listardescuento () { 
+
+    console.log(" libros disponibles:");
+    librodescuento.forEach((libro, index) => {
+      console.log(`${index + 1}: el titulo es: ${libro.titulo} autor: ${libro.autor} genero: ${libro.genero} idioma: ${libro.idioma}  descuento: ${libro.descuento}`);
 });
-  console.log(listardescuento)
+    
+} 
+listardescuento()
