@@ -529,10 +529,14 @@ const fiterlibrosPrecio = libros.filter((libro)=>{
 
 //console.table(fiterlibrosPaginas)
 
+//sort
+
+const ordenarLibrosPaginas= libros.sort((a,b) => b.paginas-a.paginas)
+
 //menu 
 function menu() {
     
-    let  eleccion=prompt(" 1. Agregar un libro 2. Quitar un libro 3. Mostrar la pila 4.listar descuento 5.libros con mas de 200 pafuinas. 6.precio mayor a 50 10. Salir")
+    let  eleccion=prompt(" 1. Agregar un libro 2. Quitar un libro 3. Mostrar la pila 4.listar descuento 5.libros con mas de 200 pafuinas. 6.precio mayor7.mostar ordenar Libros Paginas a 50 10. Salir")
     console.log (eleccion)
    
    
@@ -566,6 +570,11 @@ function menu() {
                                menu() 
                          
                             break;
+                            case '7':
+                                console.log(ordenarLibrosPaginas) 
+                                   menu() 
+                             
+                                break;
                case '10':
                    console.log("ternimo la consulta")
                    break;
