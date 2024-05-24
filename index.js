@@ -386,38 +386,7 @@ function mostrarLibros() {
     
 };
 
-function menu() {
-    
- let  eleccion=prompt(" 1. Agregar un libro 2. Quitar un libro 3. Mostrar la pila 4. Salir")
- console.log (eleccion)
 
-
-        switch(eleccion) {
-            case '1': CrearLibro()
-            console.log(`se creo el libro: ${libro.titulo}`);
-            menu() 
-                   break;
-            case '2':
-                EliminarLibros();
-                console.log(`Libro removido:`);
-                menu() 
-                break;
-            case '3':
-                mostrarLibros();
-                menu() 
-             
-                break;
-            case '4':
-                console.log("ternimo la consulta")
-                break;
-                menu() 
-            default:
-                console.log('Opción inválida, por favor elige de nuevo.');
-                menu();
-        };
-    }
-
-    menu()
 
 //metodo map 
 const listar1= libros.map((libro) =>{
@@ -504,16 +473,16 @@ const listar10= libros.map((libro) =>{
       
     };
 });
-    console.table (listar1)
-    console.table (listar2)
-    console.table (listar3)
-    console.table (listar4)
-    console.table (listar5)
-    console.table (listar6)
-    console.table (listar7)
-    console.table (listar8)
-    console.table (listar9)
-    console.table (listar10)
+    //console.table (listar1)
+    //console.table (listar2)
+    //console.table (listar3)
+    //console.table (listar4)
+    //console.table (listar5)
+    //console.table (listar6)
+    //console.table (listar7)
+    //console.table (listar8)
+    //console.table (listar9)
+    //console.table (listar10)
     //spreed
     const librodescuento = libros.map((libro) =>{  
         return{
@@ -523,15 +492,89 @@ const listar10= libros.map((libro) =>{
     };
 }
   );
-  console.log(librodescuento)
+
+//console.log(librodescuento)
 
 
 function listardescuento () { 
 
     console.log(" libros disponibles:");
     librodescuento.forEach((libro, index) => {
-      console.log(`${index + 1}: el titulo es: ${libro.titulo} autor: ${libro.autor} genero: ${libro.genero} idioma: ${libro.idioma}  descuento: ${libro.descuento}`);
+    console.log(`${index + 1}: el titulo es: ${libro.titulo} autor: ${libro.autor} genero: ${libro.genero} idioma: ${libro.idioma}  descuento: ${libro.descuento}`);
 });
     
 } 
-listardescuento()
+//listardescuento()
+
+//filter
+
+const fiterlibrosPrecio = libros.filter((libro)=>{
+    return libro.precio > 50;
+})
+
+   //console.log(fiterlibrosPrecio)
+
+    const fiterlibrosPaginas = libros.filter((libro)=>{
+        return libro.paginas > 200;
+    }) .map((mostrarPaginasLibros) => {
+         return{
+            titulo:mostrarPaginasLibros.titulo,
+            autor:mostrarPaginasLibros.autor,
+            editorial:mostrarPaginasLibros.editorial,
+            paginas:mostrarPaginasLibros.paginas,
+         }
+
+    })
+
+
+//console.table(fiterlibrosPaginas)
+
+//menu 
+function menu() {
+    
+    let  eleccion=prompt(" 1. Agregar un libro 2. Quitar un libro 3. Mostrar la pila 4.listar descuento 5.libros con mas de 200 pafuinas. 6.precio mayor a 50 10. Salir")
+    console.log (eleccion)
+   
+   
+           switch(eleccion) {
+               case '1': CrearLibro()
+               console.log(`se creo el libro: ${libro.titulo}`);
+               menu() 
+                      break;
+               case '2':
+                   EliminarLibros();
+                   console.log(`Libro removido:`);
+                   menu() 
+                   break;
+               case '3':
+                   mostrarLibros();
+                   menu() 
+                
+                   break;
+                   case '4':
+                          listardescuento();
+                       menu() 
+                    
+                       break;
+                       case '5':
+                           console.table(fiterlibrosPaginas) ;
+                           menu() 
+                        
+                           break;
+                           case '6':
+                            console.log(fiterlibrosPrecio) 
+                               menu() 
+                         
+                            break;
+               case '10':
+                   console.log("ternimo la consulta")
+                   break;
+                   menu() 
+               default:
+                   console.log('Opción inválida, por favor elige de nuevo.');
+                   menu();
+           };
+       }
+   
+       menu()
+       
