@@ -3,7 +3,7 @@ titulo:"Cien años de soledad",
 autor:"Gabriel García Márquez",
 genero:"Realismo mágico",
 idioma:" Español",
-precio:"+40.5 euros",
+precio:"40",
 formato:"pasta dura",
 isbn:"Varía según la edición1",
 descripocion:" trata un siglo en la vida de la familia Buendía, cuyo patriarca, José Arcadio Buendía, fundó el pueblo ficticio de Macondo, en Colombia.",
@@ -21,7 +21,7 @@ let libros =[
     autor:"Isabell Allende",
     genero:"romance contemporaneo",
     idioma:"español", 
-    precio:"15.000",
+    precio:"15",
     formato:"version kinde",
     isbn:"978-19864314480", 
     descripcion:"una conmovedora historia de amor que se desarrolla en san francisco.entrelazado en la vida de una joven chef y un joven msterioso hombre japones", 
@@ -39,7 +39,7 @@ let libros =[
     autor:"Emyli Bronce",
     genero:"romance clasico",
     idioma:"español", 
-    precio:"12.500",
+    precio:"12",
     formato:"tapa dura",
     isbn:"978-19864314480", 
     descripcion:"una apasionante historia de amor yvenganza entre heatchif y catherine en la salvaje y desolada campiña inglesa", 
@@ -57,7 +57,7 @@ let libros =[
     autor:"Carlos Ruiz Safon",
     genero:"romance historico/misterioso",
     idioma:"español", 
-    precio:"18.900",
+    precio:"18",
     formato:"tapa blanda",
     isbn:"978-19864314480", 
     descripcion:"ambientada en la barcelona de la posguerra , este libro cuenta la historia de un joven que se adentra en un misterio que emvulve su libro y autor", 
@@ -75,7 +75,7 @@ let libros =[
     autor:"maria dueñas",
     genero:"romance historico",
     idioma:"español", 
-    precio:"14.400",
+    precio:"14",
     formato:"tapa blanda",
     isbn:"978-19864314480", 
     descripcion:"sira una modista española se ve emvuelta en una trama de amor,espinoje y traicion durante la guerra civil y la seguda guerra  mundial", 
@@ -93,7 +93,7 @@ let libros =[
     autor:"sarah lark",
     genero:"romance historico",
     idioma:"esañol", 
-    precio:"16.900",
+    precio:"16",
     formato:"version kindle",
     isbn:"978-19864314480", 
     descripcion:"ambientada en nueva zelanda este libro narra la historia de dos mujeres y sus luchas por el amor y la libertad en un entorno exotico y desafiante", 
@@ -110,7 +110,7 @@ let libros =[
     autor:"ken follet",
     genero:"romance historico",
     idioma:"español", 
-    precio:"22.000",
+    precio:"22",
     formato:"tapa blanda",
     isbn:"978-19864314480", 
     descripcion:"este libro esta enttrelazado las vidas de varias peronajes en torno a la construcion de una catdral gotica", 
@@ -128,7 +128,7 @@ let libros =[
     autor:"antoine de saint",
     genero:"literatura infantil",
     idioma:"frances", 
-    precio:"8.900",
+    precio:"89",
     formato:"tapia dura",
     isbn:"978-19864314480", 
     descripcion:"un cuento magico que sigue las aventuras de un pequeño principe", 
@@ -146,7 +146,7 @@ let libros =[
     autor:"gabriel garcia marquez",
     genero:"novela",
     idioma:"español", 
-    precio:"15.000",
+    precio:"15",
     formato:"digital",
     isbn:"978-19864314480", 
     descripcion:"una historia de amor en un contexto de emfermedad", 
@@ -164,7 +164,7 @@ let libros =[
     autor:"gabriel garcia marquez",
     genero:"novela",
     idioma:"español", 
-    precio:"20.000",
+    precio:"20",
     formato:"fisico",
     isbn:"978-19864314480", 
     descripcion:"un clasico de la literatura latinoamericana", 
@@ -200,7 +200,7 @@ let libros =[
     autor:"carlos ruiz safon",
     genero:"misterio",
     idioma:"español", 
-    precio:"22000",
+    precio:"220",
     formato:"digital",
     isbn:"978-19864314480", 
     descripcion:"una novela que conmbina con misterio ,romance y suspenso en la barcelona de pusguerra", 
@@ -218,7 +218,7 @@ let libros =[
     autor:"julio cortazar",
     genero:"ficcion",
     idioma:"español", 
-    precio:"16000",
+    precio:"160",
     formato:"fisico",
     isbn:"978-19864314480", 
     descripcion:"una novela imnovadora que desafia las convensiones literarias", 
@@ -252,7 +252,7 @@ let libros =[
     autor:"carlos ruiz safon",
     genero:"misterio",
     idioma:"español", 
-    precio:"24000",
+    precio:"24",
     formato:"fisico",
     isbn:"978-19864314480", 
     descripcion:"la ultima entrega de la saga del cementerio de los libros olvidados", 
@@ -269,7 +269,7 @@ let libros =[
     autor:"miguel de cervantes",
     genero:"novela",
     idioma:"español", 
-     precio:"19000",
+     precio:"19",
     formato:"fisico",
     isbn:"978-19864314480", 
     descripcion:"una obra maestra de la literatura española que sigue las aventura de un caballero soñador", 
@@ -286,7 +286,7 @@ let libros =[
     autor:"zussane collins",
     genero:"ciencia ficcion",
     idioma:"español", 
-    precio:"17000",
+    precio:"17",
     formato:"fisico",
     isbn:"978-19864314480", 
     descripcion:"una diptosia donde los jovenes luchan por sobrevivir en un reality show mortal", 
@@ -303,7 +303,7 @@ let libros =[
     autor:"pablo coelh",
     genero:"ficcion",
     idioma:"español", 
-    precio:"13000",
+    precio:"13",
     formato:"fisico",
     isbn:"978-19864314480", 
     descripcion:"una historia de busqueda personal y espiritualidad que inspirado a millones de lectores", 
@@ -320,7 +320,7 @@ let libros =[
         autor:"j.k rowlmg",
         genero:"fantasia",
         idioma:"español", 
-        precio:"25.000",
+        precio:"25",
         formato:"fisico",
         isbn:"978-19864314480", 
         descripcion:"la primera entrega de la famosa saga de harry potter",  
@@ -338,7 +338,7 @@ let libros =[
     autor:"isabel allende",
     genero:"novela",
     idioma:"español", 
-    precio:"21000",
+    precio:"21",
     formato:"fisico",
     isbn:"978-19864314480", 
     descripcion:"una saga familiar qe combina realismo magico y politica en un pais latinoamericano ficticio", 
@@ -533,10 +533,64 @@ const fiterlibrosPrecio = libros.filter((libro)=>{
 
 const ordenarLibrosPaginas= libros.sort((a,b) => b.paginas-a.paginas)
 
+// manejos de arrys methods encadenados
+
+//libros con precio mayor a 11
+
+const fiterlibrosCaros = libros.filter((libro)=>{
+    return libro.precio > 11;
+}) .map((mostrarPrecioLibros) => {
+     return{
+        titulo:mostrarPrecioLibros.titulo,
+        autor:mostrarPrecioLibros.autor,
+        precio:mostrarPrecioLibros.precio, 
+     }
+})
+//console.table(fiterlibrosCaros)
+
+//libros paginas mayor 100
+
+const fiterlibrospag = libros.filter((libro)=>{
+    return libro.precio > 100;
+}) .map((librospag) => {
+     return{
+        titulo:librospag.titulo,
+        autor:librospag.autor,
+        editorial:librospag.editorial,
+        paginas:librospag.paginas, 
+     }
+})
+//console.table(fiterlibrospag)
+
+//ibros caros mayores a 20 dolares de mayor a menor
+const fiterlibrosCarosMayorMenor = libros.filter((libro)=>{
+    return libro.precio > 20;
+}) .map((mostrarPrecioLibros) => {
+     return{
+        titulo:mostrarPrecioLibros.titulo,
+        autor:mostrarPrecioLibros.autor,
+        precio:mostrarPrecioLibros.precio, 
+     }}
+    ).sort((a,b) => b.precio-a.precio)
+
+
+//console.table(fiterlibrosCarosMayorMenor)
+//libros por numero mas alto de paginas
+
+const ordenarLibrosPaginasaMayorMenor= libros.sort((a,b) => b.paginas-a.paginas)
+.map((librospagMayorMenor) => {
+    return{
+       titulo:librospagMayorMenor.titulo,
+       autor:librospagMayorMenor.autor,
+       editorial:librospagMayorMenor.editorial,
+       paginas:librospagMayorMenor.paginas, 
+    }
+})
+//console.table(ordenarLibrosPaginasaMayorMenor)
 //menu 
 function menu() {
     
-    let  eleccion=prompt(" 1. Agregar un libro 2. Quitar un libro 3. Mostrar la pila 4.listar descuento 5.libros con mas de 200 pafuinas. 6.precio mayor7.mostar ordenar Libros Paginas a 50 10. Salir")
+    let  eleccion=prompt(" elija una opcion por favor: \n 1. Agregar un libro \n 2. Quitar un libro \n 3. Mostrar la pila \n 4.listar descuento \n 5.libros con mas de 200 pafuinas.\n 6.precio mayor \n 7.mostar ordenar Libros Paginas a 50 \n 8.libros con precio mayor a 11 \n 9.libros paginas mayor 100 \n 10.ibros caros mayores a 20 dolares de mayor a menor \n 11.libros por numero mas alto de paginas \n 12.Salir")
     console.log (eleccion)
    
    
@@ -570,15 +624,37 @@ function menu() {
                                menu() 
                          
                             break;
-                            case '7':
-                                console.log(ordenarLibrosPaginas) 
-                                   menu() 
-                             
+                        case '7':
+                            console.log(ordenarLibrosPaginas) 
+                                menu() 
+                            
+                            break;
+                        case '8':
+                            console.table(fiterlibrosCaros)
+                            menu() 
+                            
+                            break;
+                        case '9':
+                            console.table(fiterlibrospag)
+                                menu() 
+                            
                                 break;
-               case '10':
+                        case '10':
+                            console.table(fiterlibrosCarosMayorMenor)
+                             menu() 
+                            
+                            break;  
+                            case '11':
+                                console.table(ordenarLibrosPaginasaMayorMenor)
+                                 menu() 
+                                
+                                break;     
+                                 
+               case '12':
                    console.log("ternimo la consulta")
+         
                    break;
-                   menu() 
+                 
                default:
                    console.log('Opción inválida, por favor elige de nuevo.');
                    menu();
