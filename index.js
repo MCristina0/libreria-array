@@ -591,7 +591,7 @@ const ordenarLibrosPaginasaMayorMenor= libros.sort((a,b) => b.paginas-a.paginas)
 //menu 
 function menu() {
     
-    let  eleccion=prompt(" elija una opcion por favor: \n 1. Agregar un libro \n 2. Quitar un libro \n 3. Mostrar la pila \n 4.listar descuento \n 5.libros con mas de 200 pafuinas.\n 6.precio mayor \n 7.mostar ordenar Libros Paginas a 50 \n 8.libros con precio mayor a 11 \n 9.libros paginas menores a 100 \n 10.ibros caros mayores a 20 dolares de mayor a menor \n 11.libros por numero mas alto de paginas \n 12.listar de 10 fromas distintas \n 12.1. ortrar libros por titulo,autor,editoria y precio \n 13.Salir")
+    let  eleccion=prompt(" elija una opcion por favor: \n 1. Agregar un libro \n 2. Quitar un libro \n 3. Mostrar la pila \n 4.listar descuento \n 5.libros con mas de 200 pafuinas.\n 6.precio mayor \n 7.mostar precios mayor a 50 \n 8.libros con precio mayor a 11 \n 9.libros paginas menores a 100 \n 10.ibros caros mayores a 20 dolares de mayor a menor \n 11.libros por numero mas alto de paginas \n 12.listar de 10 fromas distintas \n 12.1. ortrar libros por titulo,autor,editoria y precio \n 13.Salir")
     console.log (eleccion)
    
    
@@ -626,7 +626,7 @@ function menu() {
                          
                             break;
                         case '7':
-                            console.log(ordenarLibrosPaginas) 
+                            console.table(fiterlibrosPaginas)
                                 menu() 
                             
                             break;
