@@ -510,6 +510,14 @@ function listardescuento () {
 
 const fiterlibrosPrecio = libros.filter((libro)=>{
     return libro.precio > 50;
+}).map((fiterlibrosPrecio2) => {
+    return{
+       titulo:fiterlibrosPrecio2.titulo,
+       autor:fiterlibrosPrecio2.autor,
+       editorial:fiterlibrosPrecio2.editorial,
+       precio:fiterlibrosPrecio2.precio,
+    }
+
 })
 
    //console.log(fiterlibrosPrecio)
@@ -626,7 +634,7 @@ function menu() {
                          
                             break;
                         case '7':
-                            console.table(fiterlibrosPaginas)
+                            console.table(fiterlibrosPrecio)
                                 menu() 
                             
                             break;
