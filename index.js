@@ -377,7 +377,7 @@ function mostrarLibros() {
     if (libros.length > 0) {
         console.log(" libros disponibles:");
         libros.forEach((libro, index) => {
-          console.log(`${index + 1}: el titulo es: ${libro.titulo} autor: ${libro.autor} editorial: ${libro.editorial} precio: ${libro.precio} `);
+          console.log(`${index + 1}: el titulo es: ${libro.titulo}\n autor: ${libro.autor} \n  genero: ${libro.genero} \n idioma: ${libro.idioma} } \n precio: ${libro.precio} \n formato: ${libro.formato}\n editorial: ${libro.editorial}\n isdn: ${libro.isbn}\n descripcion: ${libro.descripcion}\n estado: ${libro.estado}\n ubicacion: ${libro.ubicacion}\n fecha_publicacion: ${libro.fecha_publicacion}\n paginas: ${libro.paginas} \n dimencion: ${libro.dimension}\n peso: ${libro.peso}`);
         });
       } else {
         console.log("La pila está vacía.");
@@ -500,7 +500,7 @@ function listardescuento () {
 
     console.log(" libros disponibles:");
     librodescuento.forEach((libro, index) => {
-    console.log(`${index + 1}: el titulo es: ${libro.titulo} autor: ${libro.autor} genero: ${libro.genero} idioma: ${libro.idioma}  descuento: ${libro.descuento}`);
+    console.log(`${index + 1}: el titulo es: ${libro.titulo}\n autor: ${libro.autor} \n genero: ${libro.genero} \n idioma: ${libro.idioma} \n descuento: ${libro.descuento}`);
 });
     
 } 
@@ -587,6 +587,7 @@ const ordenarLibrosPaginasaMayorMenor= libros.sort((a,b) => b.paginas-a.paginas)
     }
 })
 //console.table(ordenarLibrosPaginasaMayorMenor)
+
 //menu 
 function menu() {
     
