@@ -591,7 +591,7 @@ const ordenarLibrosPaginasaMayorMenor= libros.sort((a,b) => b.paginas-a.paginas)
 //menu 
 function menu() {
     
-    let  eleccion=prompt(" elija una opcion por favor: \n 1. Agregar un libro \n 2. Quitar un libro \n 3. Mostrar la pila \n 4.listar descuento \n 5.libros con mas de 200 pafuinas.\n 6.precio mayor \n 7.mostar ordenar Libros Paginas a 50 \n 8.libros con precio mayor a 11 \n 9.libros paginas mayor 100 \n 10.ibros caros mayores a 20 dolares de mayor a menor \n 11.libros por numero mas alto de paginas \n 12.Salir")
+    let  eleccion=prompt(" elija una opcion por favor: \n 1. Agregar un libro \n 2. Quitar un libro \n 3. Mostrar la pila \n 4.listar descuento \n 5.libros con mas de 200 pafuinas.\n 6.precio mayor \n 7.mostar ordenar Libros Paginas a 50 \n 8.libros con precio mayor a 11 \n 9.libros paginas mayor 100 \n 10.ibros caros mayores a 20 dolares de mayor a menor \n 11.libros por numero mas alto de paginas\N 12.listar de 10 fromas distintas \n 13.Salir")
     console.log (eleccion)
    
    
@@ -650,10 +650,24 @@ function menu() {
                                  menu() 
                                 
                                 break;     
-                                 
-               case '12':
-                   console.log("ternimo la consulta")
-         
+                        case '12':
+                            console.table (listar1)
+                            console.table (listar2)
+                            console.table (listar3)
+                            console.table (listar4)
+                            console.table (listar5)
+                            console.table (listar6)
+                            console.table (listar7)
+                            console.table (listar8)
+                            console.table (listar9)
+                            console.table (listar10)    
+                              menu() 
+                                
+
+                            break;                
+               case '13':
+           
+         console.log("termino la consulta")
                    break;
                  
                default:
