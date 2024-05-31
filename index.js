@@ -2,14 +2,14 @@ let libro ={
 titulo:"Cien años de soledad",
 autor:"Gabriel García Márquez",
 genero:"Realismo mágico",
-idioma:" Español",
+idioma:" español",
 precio:"40",
 formato:"pasta dura",
 isbn:"Varía según la edición1",
 descripocion:" trata un siglo en la vida de la familia Buendía, cuyo patriarca, José Arcadio Buendía, fundó el pueblo ficticio de Macondo, en Colombia.",
 estado:"nuevo",
 ubicacion:"colombia macondo",
-fecha_publicacion:"",
+fecha_publicacion:"05",
 editorial:"editoriar sub americana",
 dimencion:"2",
 peso:"400g",
@@ -92,7 +92,7 @@ let libros =[
     titulo:"bajo el sol de media noche",
     autor:"sarah lark",
     genero:"romance historico",
-    idioma:"esañol", 
+    idioma:"español", 
     precio:"16",
     formato:"version kindle",
     isbn:"978-19864314480", 
@@ -593,13 +593,142 @@ const ordenarLibrosPaginasaMayorMenor= libros.sort((a,b) => b.paginas-a.paginas)
        editorial:librospagMayorMenor.editorial,
        paginas:librospagMayorMenor.paginas, 
     }
-})
+});
 //console.table(ordenarLibrosPaginasaMayorMenor)
+
+//find
+//buscar por titulo
+let buscarTitulo = libros.find((libro) => {
+    return libro.titulo == "Cien años de soledad";
+  }) 
+
+  //buscar por titulo
+let buscarAutor = libros.find((libro) => {
+    return libro.autor === "Isabell Allende";
+  }) 
+//buscar por titulo
+let buscarFecha_publicacion = libros.find((libro) => {
+    return libro.fecha_publicacion === "17 de marzo del 2001";
+  }) 
+  //buscar por titulo
+let buscarGenero = libros.find((libro) => {
+    return libro.genero == "romance";
+  }) 
+
+//buscar por idioma
+let buscarIdioma = libros.find((libro) => {
+    return libro.idioma === "español";
+  }) 
+  let buscarPrecio = libros.find((libro) => {
+    return libro.precio === "18";
+  }) 
+  let buscarFormato = libros.find((libro) => {
+    return libro.formato === "tapa blanda";
+  }) 
+  let buscarisbn = libros.find((libro) => {
+    return libro.isbn === "978-19864314480";
+  }) 
+  let buscardescripcion = libros.find((libro) => {
+    return libro.descripcion == "ambientada en nueva zelanda este libro narra la historia de dos mujeres y sus luchas por el amor y la libertad en un entorno exotico y desafiante";
+  }) 
+  let buscarEstado = libros.find((libro) => {
+    return libro.estado === "nuevo";
+  }) 
+  let buscarubicacio = libros.find((libro) => {
+    return libro.ubicacion =="colombia macondo";
+  }) 
+  let buscarPaginas = libros.find((libro) => {
+    return libro.paginas === "320";
+  }) 
+  let buscareditorial = libros.find((libro) => {
+    return libro.editorial === "plaza & janes editores";
+  }) 
+  let buscarPeso = libros.find((libro) => {
+    return libro.peso === "400g";
+  }) 
+  let buscardimencion = libros.find((libro) => {
+    return libro.dimension == "11.43*3.18*18.42cm";
+  }) 
+//buscarmenu
+function menuBuscar() {
+    let buacarPOR = prompt('desea buscar por:\n 1:titulo \n 2: autor \n 3:fecha publicasion \n 4:genero \n 5:idioma \n 6.precio \n 7.formato \n 8.inbs \n 9.descripcion \n 10.estado \n 11.ubicacion \n 12.paginas \n 13.dimenciones \n14. peso \n 15.editorial')
+    switch (buacarPOR) {
+        case "1":
+                console.table(buscarTitulo)
+            menu()
+            break;
+            case "2":
+                console.table(buscarAutor)
+            menu()
+            break;
+            case "3":
+                console.table(buscarFecha_publicacion)
+                menu()
+            break;
+            case "4":
+                 console.table(buscarGenero);
+                 menu()
+            case "5":
+                console.table(buscarIdioma);
+                menu()  
+            break;
+            case "6":
+                console.table(buscarPrecio)
+                menu()  
+            break;
+            case "7":
+                console.table(buscarFormato)
+                menu()  
+            break;
+            case "8":
+                console.table(buscarisbn)
+                menu()  
+            break;
+            case "9":
+                console.table(buscardescripcion)
+                menu()  
+            break;
+            case "10":
+                console.table(buscarEstado)
+                menu()  
+            break;
+            case "11":
+                console.table(buscarubicacio)
+                menu()  
+            break;
+            case "12":
+                console.table(buscarPaginas)
+                menu()  
+            break;
+            case "13":
+                console.table(buscardimencion)
+                menu()  
+            break;
+            case "14":
+                console.table(buscarPeso)
+                menu()  
+            break;
+            
+            case "15":
+                console.table(buscareditorial)
+                menu()  
+            break;
+            
+            
+    
+        default:
+           console.log
+            break;
+    }
+   }
+  
 
 //menu 
 function menu() {
     
-    let  eleccion=prompt(" elija una opcion por favor: \n 1. Agregar un libro \n 2. Quitar un libro \n 3. Mostrar la pila \n 4.listar descuento \n 5.libros con mas de 200 pafuinas.\n 6.precio mayor \n 7.mostar precios mayor a 50 \n 8.libros con precio mayor a 11 \n 9.libros paginas menores a 100 \n 10.ibros caros mayores a 20 dolares de mayor a menor \n 11.libros por numero mas alto de paginas \n 12.listar de 10 fromas distintas \n 12.1. ortrar libros por titulo,autor,editoria y precio \n 13.Salir")
+    let  eleccion=prompt(" elija una opcion por favor: \n 1. Agregar un libro \n 2. Quitar un libro \n 3. Mostrar la pila \n 4.listar descuento \n 5.libros con mas de 200 pafuinas.\n 6.precio mayor \n 7.mostar precios mayor a 50 \n 8.libros con precio mayor a 11 \n 9.libros paginas menores a 100 \n 10.ibros caros mayores a 20 dolares de mayor a menor \n 11.libros por numero mas alto de paginas \n 12.listar de 10 fromas distintas \n 12.1. ortrar libros por titulo,autor,editoria y precio \n 13.buscar por \n 14.Salir "
+
+    )
     console.log (eleccion)
    
    
@@ -679,8 +808,12 @@ function menu() {
                                   menu() 
                                     
     
-                                break;          
-               case '13':
+                        break;  
+                        case '13':
+
+                        menuBuscar()
+                        break        
+               case '14':
            
          console.log("termino la consulta")
                    break;
@@ -691,5 +824,5 @@ function menu() {
            };
        }
    
-       menu()
-       
+       menu() 
+      
