@@ -46,7 +46,7 @@ let libros =[
     estado:"antiguo", 
     ubicacion:"ficion clasica", 
     fecha_publicacion:"13 de diciembre del 1847", 
-    editorial:"laza & janes editores", 
+    editorial:"plaza & janes editores", 
     paginas:"416",
     dimension:"11.43*3.18*18.42cm", 
     peso:"1 libra", 
@@ -64,12 +64,29 @@ let libros =[
     estado:"antiguo", 
     ubicacion:"ficcion contemporanea", 
     fecha_publicacion:"17 de marzo del 2001", 
-    editorial:"laza & janes editores",
+    editorial:"plaza & janes editores",
     paginas:"576", 
     dimension:"11.43*3.18*18.42cm", 
     peso:"1.2 libras", 
              
     },
+    {
+        titulo:"bajo el sol de media noche",
+        autor:"sarah lark",
+        genero:"romance historico",
+        idioma:"español", 
+        precio:"16",
+        formato:"version kindle",
+        isbn:"978-19864314480", 
+        descripcion:"ambientada en nueva zelanda este libro narra la historia de dos mujeres y sus luchas por el amor y la libertad en un entorno exotico y desafiante", 
+        estado:"nuevo", 
+        ubicacion:"ficcion contemporanea", 
+        fecha_publicacion:"12 de marzo del 2013", 
+        editorial:"plaza & janes editores", 
+        paginas:"752",
+        dimension:"11.43*3.18*18.42cm", 
+        peso:"1.3 libras", 
+        },
     {
     titulo:"el tiempo entre costuras",
     autor:"maria dueñas",
@@ -82,29 +99,13 @@ let libros =[
     estado:"nuevo", 
     ubicacion:"ficion historica", 
     fecha_publicacion:"28 de julio del 2011", 
-    editorial:"laza & janes editores", 
+    editorial:"plaza & janes editores", 
     paginas:"624",
     dimension:"11.43*3.18*18.42cm", 
     peso:"1.1 libras", 
                  
     },
-    {
-    titulo:"bajo el sol de media noche",
-    autor:"sarah lark",
-    genero:"romance historico",
-    idioma:"español", 
-    precio:"16",
-    formato:"version kindle",
-    isbn:"978-19864314480", 
-    descripcion:"ambientada en nueva zelanda este libro narra la historia de dos mujeres y sus luchas por el amor y la libertad en un entorno exotico y desafiante", 
-    estado:"nuevo", 
-    ubicacion:"ficcion contemporanea", 
-    fecha_publicacion:"12 de marzo del 2013", 
-    editorial:"laza & janes editores", 
-    paginas:"752",
-    dimension:"11.43*3.18*18.42cm", 
-    peso:"1.3 libras", 
-    },
+   
     {
     titulo:"os pilares de la terra",
     autor:"ken follet",
@@ -182,7 +183,7 @@ let libros =[
     autor:"geoge orwell",
     genero:"ciencia ficion",
     idioma:"español", 
-    precio:"18000",
+    precio:"180",
     formato:"fisico",
     isbn:"978-19864314480", 
     descripcion:"una diptosia clasica qque ha resistido la prueba del tiempo", 
@@ -218,7 +219,7 @@ let libros =[
     autor:"julio cortazar",
     genero:"ficcion",
     idioma:"español", 
-    precio:"160",
+    precio:"60",
     formato:"fisico",
     isbn:"978-19864314480", 
     descripcion:"una novela imnovadora que desafia las convensiones literarias", 
@@ -235,7 +236,7 @@ let libros =[
     autor:"gabriel garcia marquez",
     genero:"novela",
     idioma:"español", 
-    precio:"14000",
+    precio:"40",
     formato:"fisico",
     isbn:"978-19864314480", 
     descripcion:"una historia de honor venganza y tragedia de un pequeño pueblo", 
@@ -501,7 +502,7 @@ function listardescuento () {
     console.log(" libros disponibles:");
     librodescuento.forEach((libro, index) => {
     console.log(`${index + 1}: el titulo es: ${libro.titulo}\n autor: ${libro.autor} \n genero: ${libro.genero} \n idioma: ${libro.idioma} \n descuento: ${libro.descuento}`);
-});
+})
     
 } 
 //listardescuento()
@@ -559,7 +560,7 @@ const fiterlibrosCaros = libros.filter((libro)=>{
 //libros paginas menores 100
 
 const fiterlibrospag = libros.filter((libro)=>{
-    return libro.precio < 100;
+    return libro.paginas < 100;
 }) .map((librospag) => {
      return{
         titulo:librospag.titulo,
